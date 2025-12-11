@@ -4,15 +4,21 @@
 The goal of this project was to analyze historical movie data to identify key trends in cinema success. Using **SQL**, I investigated the relationship between runtime, genre, and user ratings to determine what factors contribute to a "hit" movie.
 
 ### 📂 Project Files
-| File Name | Description |
-| :--- | :--- |
-| **IMDB_Analysis.sql** | The raw SQL scripts used for data extraction and analysis. |
-| **actor_batting_avg_preview.png** | Insight: High-consistency actors. |
-| **golden_era_preview.png** | Insight: Best years for cinema. |
+| File Name | Description | Download |
+| :--- | :--- | :--- |
+| **IMDB_Analysis.sql** | The raw SQL scripts used for data extraction and analysis. | [📥 Download SQL](IMDB_Analysis.sql) |
+| **actor_batting_avg_preview.png** | Insight: High-consistency actors. | (See Preview Below) |
+| **golden_era_preview.png** | Insight: Best years for cinema. | (See Preview Below) |
 
 ### 📊 The Database
-**Source:** IMDB Relational Database (SQLite Version)
-**Structure:** `movies`, `people`, `stars`, `directors`, `ratings`
+**Source:** [IMDB Relational Database (CS50 Version)](https://cdn.cs50.net/2019/fall/psets/7/movies/movies.zip)
+*(Note: This analysis uses a relational version of the IMDB dataset, requiring JOINs between tables.)*
+
+**Structure:**
+* `movies` (Title, Year, Runtime)
+* `people` (Actor/Director Names, Birth Year)
+* `stars` / `directors` (Linking Tables)
+* `ratings` (User Scores, Vote Counts)
 
 ### 🧠 Key Business Insights
 
@@ -35,6 +41,13 @@ The goal of this project was to analyze historical movie data to identify key tr
 **SQL Skill:** `COUNT()`, Sorting `DESC`.
 *(See code and result below)*
 ![Director Analysis](directors_ranking_preview.png)
+
+### ⚙️ How to Run This Project
+1.  **Download** the `IMDB_Analysis.sql` file above.
+2.  **Download** the [Database Source File](https://cdn.cs50.net/2019/fall/psets/7/movies/movies.zip) and unzip it.
+3.  Open **DB Browser for SQLite** (Free Tool).
+4.  Click **"Open Database"** and select `movies.db`.
+5.  Go to the **"Execute SQL"** tab, paste the script, and click Run (▶).
 
 ---
 *Created as part of a Data Analytics Portfolio Project.*
